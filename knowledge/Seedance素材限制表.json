@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "last_verified": "2026-07-31",
+  "scope": "公开官方资料 + 用户当前账号截图 + 用户报告的一次审核失败和一次真实5秒生成；Codex未登录账号",
+  "platforms": {
+    "seedance_model_card_public_platform": {
+      "source_ids": ["S-A02", "S-A03"],
+      "max_images": 9,
+      "max_videos": 3,
+      "max_audios": 3,
+      "duration_seconds": {"min": 4, "max": 15},
+      "native_resolutions": ["480p", "720p"],
+      "account_verified": false,
+      "generation_tested": false,
+      "confidence": "HIGH"
+    },
+    "volcengine_commercial_entry": {
+      "source_ids": ["S-B02"],
+      "duration_seconds": {"min": 4, "max": 15},
+      "advertised_resolutions": ["480p", "720p", "1080p"],
+      "account_verified": false,
+      "generation_tested": false,
+      "confidence": "MEDIUM",
+      "notes": "平台特定商业页面；不得迁移为用户当前官网账号结论。"
+    },
+    "user_current_website": {
+      "source_ids": [],
+      "reported_aspect_ratios": ["21:9", "16:9", "4:3", "1:1", "3:4", "9:16"],
+      "reported_resolution": ["720p"],
+      "reported_duration_seconds": {"min": 4, "max": 15, "example": 5},
+      "reported_at_binding": true,
+      "screenshot_received_and_inspected": false,
+      "account_verified": false,
+      "generation_tested": false,
+      "confidence": "UNKNOWN",
+      "notes": "来自用户需求文本的Seedance参数描述；尚未收到视频参数页截图。另有一张即梦创作类型菜单截图，记录在jimeng_current_ui_screenshot。"
+    },
+    "jimeng_current_ui_screenshot": {
+      "source_ids": ["U-UI01", "U-UI02", "U-UI03", "U-UI04"],
+      "captured_date": "2026-07-31",
+      "visible_creation_types": [
+        "Agent 模式",
+        "图片生成",
+        "视频生成",
+        "音乐生成",
+        "配音生成",
+        "数字人",
+        "动作模仿"
+      ],
+      "selected_creation_type": "Agent 模式",
+      "visible_video_models": [
+        "即梦 Seedance 2.0 mini by seed",
+        "即梦 Seedance 2.0 Fast VIP",
+        "即梦 Seedance 2.0 VIP",
+        "即梦 Seedance 1.5 Pro",
+        "即梦 Seedance 1.0"
+      ],
+      "selected_video_model": "即梦 Seedance 2.0 mini by seed",
+      "visible_video_mode": "全能参考",
+      "visible_aspect_ratios": ["21:9", "16:9", "4:3", "1:1", "3:4", "9:16"],
+      "selected_aspect_ratio": "9:16",
+      "visible_resolution": "720P",
+      "visible_generation_counts": [1, 2, 3, 4],
+      "selected_generation_count": 1,
+      "duration_control_visible_scale": {"min_label": 0, "max_label": 15},
+      "selected_duration_seconds": 5,
+      "nine_seconds_selectability_verified": false,
+      "visible_unlabeled_value": "菱形图标旁90",
+      "video_model_name_visible": true,
+      "video_parameters_visible": true,
+      "account_ui_state_verified": true,
+      "generation_tested": false,
+      "confidence": "HIGH",
+      "face_reference_image_rule": {
+        "observed_result": "用户报告一次带人脸参考图片的提交未通过审核",
+        "user_revised_hypothesis": "确为AI生成的虚构人物参考图，在指令中如实声明不对应或冒充现实个人/公众人物时，可能允许审核",
+        "official_context": "火山方舟官方材料区分真人、私域虚拟人像和公共虚拟人像；真人需授权，虚拟人像有前置校验/入库路径",
+        "current_task_policy": "可谨慎复测AI虚构人物身份图；声明必须真实，不能用无法律风险等绝对措辞替代权属或平台审核",
+        "native_error_text_received": false,
+        "successful_review_with_fictional_disclosure_verified": false,
+        "scope": "当前账号当前任务；不能推广为所有平台，也不能保证过审",
+        "confidence": "USER_REPORTED_HYPOTHESIS"
+      },
+      "notes": "截图直接证实当前显示状态。除mini/全能参考/9:16/720P/数量1/5秒外，不把其他可见项写成已选择；90的标签未出现在截图中。"
+    }
+  },
+  "image_anchor_candidates": {
+    "seedream_5_0_lite": {
+      "source_ids": ["S-A04", "S-A05", "S-B07"],
+      "roles": [
+        "character_identity_anchor",
+        "difficult_action_anchor",
+        "scene_style_anchor"
+      ],
+      "account_verified": false,
+      "generation_tested": false,
+      "confidence": "MEDIUM",
+      "notes": "官方资料支持主体一致性、编辑和组图；用户当前账号入口与实际稳定性待核。"
+    }
+  },
+  "privacy_defaults": {
+    "upload_local_media": false,
+    "external_transcription": false,
+    "login_or_generate": false
+  }
+}

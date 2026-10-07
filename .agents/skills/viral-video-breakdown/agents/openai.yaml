@@ -1,0 +1,4 @@
+interface:
+  display_name: "爆款视频拆解"
+  short_description: "按证据逐镜拆解并形成可复用的锁定、替换和变化控制图"
+  default_prompt: "Use $viral-video-breakdown to create an evidence-grounded shot analysis and reconstruction control map."

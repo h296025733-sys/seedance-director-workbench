@@ -1,0 +1,4 @@
+interface:
+  display_name: "纯复刻视频导演"
+  short_description: "照着参考视频复刻动作、镜头、运镜和节奏，只替换指定内容"
+  default_prompt: "使用纯复刻视频导演（$replicate-viral-video）处理我提供的视频，保留动作、镜头、运镜和节奏，只替换我指定的人物、背景或画风，并在付费生成前完成双重审核。"

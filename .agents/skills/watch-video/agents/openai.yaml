@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频取证"
+  short_description: "本地提取可追溯的视频镜头、关键帧、字幕、音频和复刻前置证据"
+  default_prompt: "Use $watch-video to create a local evidence package before analyzing or reconstructing this video."

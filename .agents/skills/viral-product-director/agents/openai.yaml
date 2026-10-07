@@ -1,0 +1,4 @@
+interface:
+  display_name: "爆款产品洞察导演"
+  short_description: "拆解爆款心理与转化机制，重构成适合用户产品的原创短视频方案"
+  default_prompt: "使用 $viral-product-director 分析参考内容与产品资料，提出原创产品短视频方案和 Seedance 执行包。"
